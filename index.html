@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ゆいま101</title>
+  <meta name="description" content="ゆいま101のWebサイトです。">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header_inner">
+      <div class="header_logo">
+        <a href="/"><img src="images/common/logo.png" alt="ゆいま101"></a>
+      </div> <!-- /header_logo -->
+
+      <div id="nav-drawer">
+        <input id="nav-input" type="checkbox" class="nav-unshown">
+        <label id="nav-open" for="nav-input"><span></span></label>
+        <label id="nav-close" for="nav-input"></label>
+
+        <div id="nav-content">
+          <nav aria-label="メインナビゲーション">
+            <ul class="nav_drawer_list">
+              <li><a href="#introduction">宿について</a></li>
+              <li><a href="#stay">過ごし方</a></li>
+              <li><a href="#news">お知らせ</a></li>
+              <li><a href="#contact">お問い合わせ</a></li>
+              <li>
+                <a href="#" class="instagram_icon" aria-label="Instagram">
+                  <svg version="1.1" id="instagram" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+                    <path fill="currentColor" d="M8.787,0.104C7.189,0.18,6.1,0.434,5.146,0.809c-0.984,0.383-1.82,0.898-2.652,1.734S1.15,4.215,0.768,5.204
+                    C0.4,6.159,0.146,7.25,0.076,8.848c-0.066,1.598-0.082,2.109-0.074,6.182c0.004,4.073,0.023,4.585,0.098,6.185
+                    c0.078,1.596,0.332,2.686,0.707,3.639c0.383,0.988,0.898,1.82,1.734,2.654c0.836,0.832,1.672,1.34,2.66,1.725
+                    c0.957,0.369,2.047,0.619,3.645,0.689s2.109,0.086,6.184,0.078c4.07-0.008,4.582-0.027,6.184-0.102
+                    c1.598-0.078,2.684-0.332,3.637-0.703c0.988-0.387,1.824-0.902,2.656-1.736c0.832-0.836,1.34-1.672,1.723-2.66
+                    c0.371-0.953,0.621-2.045,0.691-3.639c0.07-1.6,0.086-2.116,0.078-6.187c-0.008-4.074-0.027-4.584-0.102-6.184
+                    c-0.074-1.598-0.332-2.688-0.703-3.641c-0.387-0.984-0.902-1.82-1.734-2.652c-0.84-0.832-1.676-1.344-2.66-1.727
+                    c-0.957-0.367-2.047-0.619-3.645-0.689c-1.602-0.072-2.109-0.088-6.184-0.078C10.896,0.008,10.389,0.028,8.787,0.104 M8.963,27.223
+                    c-1.465-0.066-2.258-0.307-2.789-0.512c-0.699-0.27-1.199-0.596-1.727-1.115c-0.523-0.525-0.852-1.023-1.125-1.725
+                    c-0.203-0.529-0.453-1.322-0.52-2.783c-0.074-1.582-0.094-2.056-0.102-6.064c-0.008-4.004,0.008-4.48,0.078-6.061
+                    c0.063-1.461,0.305-2.256,0.508-2.787C3.561,5.477,3.885,4.977,4.408,4.45S5.432,3.6,6.131,3.325
+                    c0.527-0.207,1.32-0.451,2.785-0.521c1.582-0.076,2.055-0.092,6.059-0.1c4.008-0.008,4.48,0.008,6.063,0.078
+                    c1.461,0.063,2.258,0.305,2.785,0.51c0.699,0.271,1.199,0.596,1.727,1.119s0.852,1.02,1.125,1.723
+                    c0.207,0.527,0.453,1.324,0.523,2.785c0.074,1.578,0.09,2.055,0.098,6.059c0.008,4.008-0.008,4.482-0.074,6.064
+                    c-0.066,1.461-0.309,2.258-0.512,2.787c-0.27,0.697-0.598,1.199-1.117,1.725c-0.527,0.523-1.023,0.85-1.727,1.123
+                    c-0.527,0.207-1.32,0.453-2.781,0.523c-1.582,0.074-2.055,0.09-6.063,0.098C11.018,27.305,10.545,27.289,8.963,27.223 M21.189,6.981
+                    c0.004,0.994,0.813,1.799,1.805,1.797s1.797-0.809,1.797-1.801c-0.004-0.994-0.809-1.799-1.805-1.797
+                    C21.994,5.182,21.186,5.989,21.189,6.981 M7.299,15.016c0.008,4.254,3.461,7.697,7.715,7.689c4.254-0.01,7.695-3.464,7.688-7.718
+                    c-0.008-4.254-3.465-7.695-7.715-7.689C10.732,7.305,7.287,10.764,7.299,15.016 M9.998,15.01c-0.004-2.762,2.23-5.002,4.992-5.01
+                    c2.762-0.004,5.004,2.23,5.008,4.99c0.004,2.762-2.227,5.007-4.988,5.011C12.248,20.008,10.006,17.774,9.998,15.01"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div> <!-- /nav-content -->
+      </div> <!-- /nav-drawer -->
+    </div> <!-- /header_inner -->
+  </header> <!-- /header -->
+
+  <main>
+    <section class="hero">
+      <div class="hero_slides">
+        <div class="hero_slide">
+          <img src="images/hero/01.jpg" alt="">
+        </div> <!-- /hero_slide -->
+
+        <div class="hero_slide">
+          <img src="images/hero/02.jpg" alt="">
+        </div> <!-- /hero_slide -->
+
+        <div class="hero_slide">
+          <img src="images/hero/03.jpg" alt="">
+        </div> <!-- /hero_slide -->
+      </div> <!-- /hero_slides -->
+
+      <div class="hero_content">
+        <h1>キャッチコピー</h1>
+        <p>サブテキスト</p>
+      </div> <!-- /hero_content -->
+    </section> <!-- /hero -->
+
+    <section class="introduction" id="introduction">
+      <div class="section_inner">
+        <div class="introduction_swiper js-swiper">
+          <div class="swiper js-swiper-main">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="images/introduction/slide-sp/01.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="images/introduction/slide-sp/02.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="images/introduction/slide-sp/03.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="images/introduction/slide-sp/04.jpg" alt=""></div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div> <!-- /js-swiper-main -->
+
+          <div class="swiper js-swiper-thumbs">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="images/introduction/slide-sp/01.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="images/introduction/slide-sp/02.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="images/introduction/slide-sp/03.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="images/introduction/slide-sp/04.jpg" alt=""></div>
+            </div>
+          </div> <!-- /js-swiper-thumbs -->
+        </div> <!-- /introduction_swiper -->
+
+        <div class="introduction_content">
+          <h2>ごあいさつ</h2>
+
+          <div class="introduction_text">
+            <p>
+              名前の由来、紹介制にした理由、朝・昼・夜の過ごし方、癒しの時間についてのテキストがはいります。
+            </p>
+            <p>
+              名前の由来、紹介制にした理由、朝・昼・夜の過ごし方、癒しの時間についてのテキストがはいります。
+            </p>
+          </div> <!-- /introduction_text -->
+        </div> <!-- /introduction_content -->
+      </div> <!-- /section_inner -->
+    </section> <!-- /introduction -->
+
+    <section class="philosophy" id="philosophy">
+      <div class="philosophy_inner">
+        <header class="section_header">
+          <h2 class="section_title">ゆいま101について</h2>
+        </header> <!-- /section_header -->
+
+        <div class="philosophy_content">
+          <figure class="philosophy_image">
+            <img src="images/philosophy/main.jpg" alt="">
+          </figure> <!-- /philosophy_image -->
+
+          <section class="philosophy_item">
+            <h3 class="philosophy_title">宿への想い</h3>
+            <div class="philosophy_body">
+              <p>紹介制の理由と大切にしていることのテキストが入ります。</p>
+              <p>紹介制の理由と大切にしていることのテキストが入ります。</p>
+              <p>紹介制の理由と大切にしていることのテキストが入ります。</p>
+            </div> <!-- /philosophy_body -->
+          </section> <!-- /philosophy_item -->
+        </div> <!-- /philosophy_content -->
+      </div> <!-- /philosophy_inner -->
+    </section> <!-- /philosophy -->
+
+    <section class="architecture" id="architecture">
+      <div class="architecture_inner">
+        <header class="section_header">
+          <h2 class="section_title">琉球古民家について</h2>
+        </header> <!-- /section_header -->
+
+        <div class="architecture_content">
+          <figure class="architecture_image">
+            <img src="images/architecture/main.jpg" alt="">
+          </figure> <!-- /architecture_image -->
+
+          <div class="architecture_body">
+            <p>建物の歴史、空間の紹介のテキストが入ります。</p>
+            <p>建物の歴史、空間の紹介のテキストが入ります。</p>
+            <p>建物の歴史、空間の紹介のテキストが入ります。</p>
+          </div> <!-- /architecture_body -->
+        </div> <!-- /architecture_content -->
+      </div> <!-- /architecture_inner -->
+    </section> <!-- /architecture -->
+
+    <section class="pillars" id="pillars">
+      <div class="pillars_inner">
+        <header class="section_header">
+          <h2 class="section_title">ゆいま101の3つの柱</h2>
+        </header> <!-- /section_header -->
+
+        <div class="pillars_content">
+          <figure class="pillars_image">
+            <img src="images/pillars/chart.png" alt="">
+          </figure> <!-- /pillars_image -->
+
+          <div class="pillars_body">
+            <p>住環境、食、福祉を大切にしている理由のテキストが入ります。住環境、食、福祉を大切にしている理由のテキストが入ります。住環境、食、福祉を大切にしている理由のテキストが入ります。住環境、食、福祉を大切にしている理由のテキストが入ります。</p>
+          </div> <!-- /pillars_body -->
+        </div> <!-- /pillars_content -->
+      </div> <!-- /pillars_inner -->
+    </section> <!-- /pillars -->
+
+    <section class="place" id="place">
+      <div class="place_inner">
+        <header class="section_header">
+          <h2 class="section_title">糸満という場所</h2>
+        </header> <!-- /section_header -->
+
+        <div class="place_list">
+          <article class="place_item">
+            <span class="place_number">01</span>
+            <h3 class="place_title">観光スポットタイトル</h3>
+
+            <figure class="place_image">
+              <img src="images/place/01.jpg" alt="">
+            </figure> <!-- /place_image -->
+
+            <p class="place_text">テキストが入ります。テキストが入ります。テキストが入ります。</p>
+          </article> <!-- /place_item -->
+
+          <article class="place_item">
+            <span class="place_number">02</span>
+            <h3 class="place_title">観光スポットタイトル</h3>
+
+            <figure class="place_image">
+              <img src="images/place/02.jpg" alt="">
+            </figure> <!-- /place_image -->
+
+            <p class="place_text">テキストが入ります。テキストが入ります。テキストが入ります。</p>
+          </article> <!-- /place_item -->
+        </div> <!-- /place_list -->
+      </div> <!-- /place_inner -->
+    </section> <!-- /place -->
+
+    <section class="stay" id="stay">
+      <div class="stay_inner">
+        <header class="section_header">
+          <h2 class="section_title">ご宿泊について</h2>
+        </header> <!-- /section_header -->
+
+        <div class="stay_list">
+          <details>
+            <summary>紹介制について</summary>
+            <div class="stay_body">
+              <p>紹介制についてのテキストが入ります。</p>
+            </div> <!-- /stay_body -->
+          </details>
+
+          <details>
+            <summary>ご利用条件</summary>
+            <div class="stay_body">
+              <p>ご利用条件についてのテキストが入ります。</p>
+            </div> <!-- /stay_body -->
+          </details>
+
+          <details>
+            <summary>FAQ<span>（よくあるご質問）</span></summary>
+            <div class="stay_body">
+              <div class="faq-item">
+                <div class="faq-question"><span>Q.</span> チェックインとチェックアウトの時間は何時ですか？</div>
+                <div class="faq-answer"><span>A.</span> チェックインは15:00から、チェックアウトは10:00までとなっております。</div>
+              </div>
+        
+              <div class="faq-item">
+                <div class="faq-question"><span>Q.</span> 近くにスーパーやコンビニはありますか？</div>
+                <div class="faq-answer"><span>A.</span> 徒歩3分のところにコンビニ、徒歩10分のところに24時間営業のスーパーがございます。</div>
+              </div>
+        
+              <div class="faq-item">
+                <div class="faq-question"><span>Q.</span> 滞在中のタオルの交換はありますか？</div>
+                <div class="faq-answer"><span>A.</span> ご滞在日数分のタオルをあらかじめお部屋にご用意しております。</div>
+              </div>
+            </div> <!-- /stay_body -->
+          </details>
+
+          <details>
+            <summary>宿泊プラン</summary>
+            <div class="stay_body">
+              <p>宿泊プランについてのテキストが入ります。</p>
+            </div> <!-- /stay_body -->
+          </details>
+
+          <details>
+            <summary>宿泊約款</summary>
+            <div class="stay_body">
+              <p>宿泊約款についてのテキストが入ります。</p>
+            </div> <!-- /stay_body -->
+          </details>
+        </div> <!-- /stay_list -->
+      </div> <!-- /stay_inner -->
+    </section> <!-- /stay -->
+
+    <section class="news" id="news">
+      <div class="news_inner">
+        <header class="section_header">
+          <h2 class="section_title">お知らせ</h2>
+          <p class="section_en_title">NEWS</p>
+        </header> <!-- /section_header -->
+
+        <div class="news_list">
+          <article class="news_item">
+            <a href="#">
+              <div class="news_meta">
+                <time datetime="2026-01-01">2026.01.01</time>
+                <span class="news_category">カテゴリー</span>
+              </div> <!-- /news_meta -->
+
+              <h3 class="news_title">タイトルが入ります</h3>
+
+              <figure class="news_image">
+                <img src="images/news/dummy-01.jpg" alt="">
+              </figure> <!-- /news_image -->
+
+              <p class="news_text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+            </a>
+          </article> <!-- /news_item -->
+
+          <article class="news_item">
+            <a href="#">
+              <div class="news_meta">
+                <time datetime="2026-01-01">2026.01.01</time>
+                <span class="news_category">カテゴリー</span>
+              </div> <!-- /news_meta -->
+
+              <h3 class="news_title">タイトルが入ります</h3>
+
+              <figure class="news_image">
+                <img src="images/news/dummy-02.jpg" alt="">
+              </figure> <!-- /news_image -->
+
+              <p class="news_text">テキストが入ります。</p>
+            </a>
+          </article> <!-- /news_item -->
+
+          <article class="news_item">
+            <a href="#">
+              <div class="news_meta">
+                <time datetime="2026-01-01">2026.01.01</time>
+                <span class="news_category">カテゴリー</span>
+              </div> <!-- /news_meta -->
+
+              <h3 class="news_title">タイトルが入ります</h3>
+
+              <figure class="news_image">
+                <img src="images/news/dummy-03.jpg" alt="">
+              </figure> <!-- /news_image -->
+
+              <p class="news_text">テキストが入ります。</p>
+            </a>
+          </article> <!-- /news_item -->
+        </div> <!-- /news_list -->
+
+        <div class="news_more">
+          <a href="/news/">&gt; お知らせ一覧</a>
+        </div> <!-- /news_more -->
+
+      </div> <!-- /news_inner -->
+    </section> <!-- /news -->
+
+    <section class="contact" id="contact">
+      <div class="contact_inner">
+        <header class="section_header">
+          <h2 class="section_title">お問い合わせ</h2>
+          <p class="section_en_title">CONTACT</p>
+        </header> <!-- /section_header -->
+
+        <form class="contact_form" action="#" method="post">
+          <div class="form_item">
+            <label for="name">お名前 <span>＊必須</span></label>
+            <input type="text" id="name" name="name" required placeholder="例）氏名">
+          </div> <!-- /form_item -->
+
+          <div class="form_item">
+            <label for="email">メールアドレス <span>＊必須</span></label>
+            <input type="email" id="email" name="email" required placeholder="example@email.com">
+          </div> <!-- /form_item -->
+
+          <div class="form_item">
+            <label for="subject">件名 <span>＊必須</span></label>
+            <input type="text" id="subject" name="subject" required placeholder="例）件名">
+          </div> <!-- /form_item -->
+
+          <div class="form_item">
+            <label for="message">メッセージ <span>＊必須</span></label>
+            <textarea id="message" name="message" required placeholder="例）メッセージを記入"></textarea>
+          </div> <!-- /form_item -->
+
+          <div class="form_submit">
+            <button type="submit">送信</button>
+          </div> <!-- /form_submit -->
+        </form> <!-- /contact_form -->
+      </div> <!-- /contact_inner -->
+    </section> <!-- /contact -->
+
+  </main> <!-- /main -->
+
+  <footer class="footer">
+    <div class="footer_inner">
+      <div class="footer_logo">
+        <a href="/">
+          <img src="images/common/logo.png" alt="ゆいま101">
+        </a>
+      </div> <!-- /footer_logo -->
+
+      <p class="footer_catch">キャッチコピー</p>
+
+      <nav class="footer_nav" aria-label="フッターナビゲーション">
+        <ul>
+          <li><a href="#stay">宿について</a></li>
+          <li><a href="#introduction">過ごし方</a></li>
+          <li><a href="#news">お知らせ</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+          <li>
+            <a class="instagram_icon" href="#" aria-label="Instagram">
+              <svg id="instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" aria-hidden="true">
+              <path fill="#FFFFFF" d="M8.787,0.104C7.189,0.18,6.1,0.434,5.146,0.809c-0.984,0.383-1.82,0.898-2.652,1.734S1.15,4.215,0.768,5.204
+                C0.4,6.159,0.146,7.25,0.076,8.848c-0.066,1.598-0.082,2.109-0.074,6.182c0.004,4.073,0.023,4.585,0.098,6.185
+                c0.078,1.596,0.332,2.686,0.707,3.639c0.383,0.988,0.898,1.82,1.734,2.654c0.836,0.832,1.672,1.34,2.66,1.725
+                c0.957,0.369,2.047,0.619,3.645,0.689s2.109,0.086,6.184,0.078c4.07-0.008,4.582-0.027,6.184-0.102
+                c1.598-0.078,2.684-0.332,3.637-0.703c0.988-0.387,1.824-0.902,2.656-1.736c0.832-0.836,1.34-1.672,1.723-2.66
+                c0.371-0.953,0.621-2.045,0.691-3.639c0.07-1.6,0.086-2.116,0.078-6.187c-0.008-4.074-0.027-4.584-0.102-6.184
+                c-0.074-1.598-0.332-2.688-0.703-3.641c-0.387-0.984-0.902-1.82-1.734-2.652c-0.84-0.832-1.676-1.344-2.66-1.727
+                c-0.957-0.367-2.047-0.619-3.645-0.689c-1.602-0.072-2.109-0.088-6.184-0.078C10.896,0.008,10.389,0.028,8.787,0.104 M8.963,27.223
+                c-1.465-0.066-2.258-0.307-2.789-0.512c-0.699-0.27-1.199-0.596-1.727-1.115c-0.523-0.525-0.852-1.023-1.125-1.725
+                c-0.203-0.529-0.453-1.322-0.52-2.783c-0.074-1.582-0.094-2.056-0.102-6.064c-0.008-4.004,0.008-4.48,0.078-6.061
+                c0.063-1.461,0.305-2.256,0.508-2.787C3.561,5.477,3.885,4.977,4.408,4.45S5.432,3.6,6.131,3.325
+                c0.527-0.207,1.32-0.451,2.785-0.521c1.582-0.076,2.055-0.092,6.059-0.1c4.008-0.008,4.48,0.008,6.063,0.078
+                c1.461,0.063,2.258,0.305,2.785,0.51c0.699,0.271,1.199,0.596,1.727,1.119s0.852,1.02,1.125,1.723
+                c0.207,0.527,0.453,1.324,0.523,2.785c0.074,1.578,0.09,2.055,0.098,6.059c0.008,4.008-0.008,4.482-0.074,6.064
+                c-0.066,1.461-0.309,2.258-0.512,2.787c-0.27,0.697-0.598,1.199-1.117,1.725c-0.527,0.523-1.023,0.85-1.727,1.123
+                c-0.527,0.207-1.32,0.453-2.781,0.523c-1.582,0.074-2.055,0.09-6.063,0.098C11.018,27.305,10.545,27.289,8.963,27.223 M21.189,6.981
+                c0.004,0.994,0.813,1.799,1.805,1.797s1.797-0.809,1.797-1.801c-0.004-0.994-0.809-1.799-1.805-1.797
+                C21.994,5.182,21.186,5.989,21.189,6.981 M7.299,15.016c0.008,4.254,3.461,7.697,7.715,7.689c4.254-0.01,7.695-3.464,7.688-7.718
+                c-0.008-4.254-3.465-7.695-7.715-7.689C10.732,7.305,7.287,10.764,7.299,15.016 M9.998,15.01c-0.004-2.762,2.23-5.002,4.992-5.01
+                c2.762-0.004,5.004,2.23,5.008,4.99c0.004,2.762-2.227,5.007-4.988,5.011C12.248,20.008,10.006,17.774,9.998,15.01"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav> <!-- /footer_nav -->
+    </div> <!-- /footer_inner -->
+
+    <p class="copyright">© yuima101 All Rights Reserved.</p>
+  </footer> <!-- /footer -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+  <script>
+  const sliders = document.querySelectorAll('.js-swiper');
+
+  sliders.forEach((slider) => {
+    const thumbs = slider.querySelector('.js-swiper-thumbs');
+    const main = slider.querySelector('.js-swiper-main');
+
+    const swiperThumbs = new Swiper(thumbs, {
+      loop: true,
+      spaceBetween: 8,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+
+    const swiperMain = new Swiper(main, {
+      loop: true,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: slider.querySelector('.swiper-button-next'),
+        prevEl: slider.querySelector('.swiper-button-prev'),
+      },
+      thumbs: {
+        swiper: swiperThumbs,
+      },
+    });
+  });
+  </script>
+</body>
+</html>
