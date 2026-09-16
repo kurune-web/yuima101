@@ -4,20 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>ゆいま101</title>
+  <title>NEWS｜ゆいま101</title>
   <meta name="description" content="ゆいま101のWebサイトです。">
 
   <link rel="stylesheet" href="../../css/reset.css">
   <link rel="stylesheet" href="../../css/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
-  <script defer src="js/main.js"></script>
 </head>
 
 <body>
-  <header class="header">
+  <header class="header header_subpage">
     <div class="header_inner">
       <div class="header_logo">
-        <a href="../../"><img src="../../images/common/logo.png" alt="ゆいま101"></a>
+        <a href="../../index.html"><img src="../../images/common/logo.png" alt="ゆいま101"></a>
       </div> <!-- /header_logo -->
 
       <div id="nav-drawer">
@@ -28,11 +26,11 @@
         <div id="nav-content">
           <nav aria-label="メインナビゲーション">
             <ul class="nav_drawer_list">
-              <li class="nav_home"><a href="../../">HOME</a></li>
-              <li><a href="#introduction">宿について</a></li>
-              <li><a href="#stay">過ごし方</a></li>
-              <li><a href="#news">お知らせ</a></li>
-              <li><a href="#contact">お問い合わせ</a></li>
+              <li class="nav_home"><a href="../../index.html">HOME</a></li>
+              <li><a href="../../index.html#introduction">ごあいさつ</a></li>
+              <li><a href="../../index.html#stay">ご宿泊について</a></li>
+              <li><a href="../../index.html#news">お知らせ</a></li>
+              <li><a href="../../index.html#contact">お問い合わせ</a></li>
               <li>
                 <a href="#" class="instagram_icon" aria-label="Instagram">
                   <svg version="1.1" id="instagram" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -68,13 +66,100 @@
   </header> <!-- /header -->
 
   <main>
+    <div class="news_article">
+      <div class="news_article_inner">
+        <div class="news_article_main">
+          <article class="news_article_content">
+            <div class="news_meta">
+              <time datetime="2026-01-01">2026.01.01</time>
+              <span class="news_category">宿ごはん</span>
+            </div> <!-- /news_meta -->
 
+            <h1 class="news_article_title">タイトルが入りますタイトルが入りますタイトルが入ります</h1>
+
+            <div class="news_article_body">
+              <figure class="news_article_image">
+                <img src="../../images/news/no-img.jpg" alt="">
+              </figure> <!-- /news_article_image -->
+
+              <p>
+                テキストが入ります。テキストが入ります。テキストが入ります。
+                テキストが入ります。テキストが入ります。
+              </p>
+
+              <p>
+                ゆいま101で過ごす時間や、宿で感じていただきたいことを
+                ここに文章として掲載します。
+              </p>
+
+              <p>
+                テキストが入ります。テキストが入ります。テキストが入ります。
+              </p>
+
+            </div> <!-- /news_article_body -->
+          </article> <!-- /news_article_content -->
+        </div> <!-- /news_article_main -->
+
+        <aside class="news_article_side">
+          <section class="news_side_section">
+            <h2 class="news_side_title">最新記事</h2>
+
+            <ul class="news_side_list">
+              <li>
+                <a href="../sample-article/">
+                  タイトルが入りますタイトルが入りますタイトルが入ります
+                </a>
+              </li>
+              <li>
+                <a href="../sample-article/">
+                  タイトルが入ります
+                </a>
+              </li>
+              <li>
+                <a href="../sample-article/">
+                  タイトルが入ります
+                </a>
+              </li>
+            </ul>
+          </section> <!-- /news_side_section -->
+
+          <section class="news_side_section">
+            <h2 class="news_side_title">カテゴリー</h2>
+            <ul class="news_side_list">
+              <li>
+                <a href="#">宿の紹介（1）</a>
+              </li>
+              <li>
+                <a href="#">宿ごはん（1）</a>
+              </li>
+              <li>
+                <a href="#">お知らせ（1）</a>
+              </li>
+              <li>
+                <a href="#">お客さまの声（1）</a>
+              </li>
+            </ul>
+          </section> <!-- /news_side_section -->
+
+          <section class="news_side_section news_search">
+            <h2 class="news_side_title">検索</h2>
+            <form class="search_form" action="#" method="get">
+              <input type="search" name="s" placeholder="検索" aria-label="キーワードを入力">
+              <button type="submit" aria-label="検索">
+                <img src="../../images/news/search.svg" alt="">
+              </button>
+            </form>
+          </section> <!-- /news_side_section -->
+        </aside> <!-- /news_article_side -->
+
+      </div> <!-- /news_article_inner -->
+    </div> <!-- /news_article -->
   </main> <!-- /main -->
 
   <footer class="footer">
     <div class="footer_inner">
       <div class="footer_logo">
-        <a href="../../">
+        <a href="../../index.html">
           <img src="../../images/common/logo.png" alt="ゆいま101">
         </a>
       </div> <!-- /footer_logo -->
@@ -83,10 +168,10 @@
 
       <nav class="footer_nav" aria-label="フッターナビゲーション">
         <ul>
-          <li><a href="#stay">宿について</a></li>
-          <li><a href="#introduction">過ごし方</a></li>
-          <li><a href="#news">お知らせ</a></li>
-          <li><a href="#contact">お問い合わせ</a></li>
+          <li><a href="../../index.html#introduction">ごあいさつ</a></li>
+          <li><a href="../../index.html#stay">ご宿泊について</a></li>
+          <li><a href="../../index.html#news">お知らせ</a></li>
+          <li><a href="../../index.html#contact">お問い合わせ</a></li>
           <li>
             <a class="instagram_icon" href="#" aria-label="Instagram">
               <svg id="instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" aria-hidden="true">
@@ -120,40 +205,7 @@
     <p class="copyright">© yuima101 All Rights Reserved.</p>
   </footer> <!-- /footer -->
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script defer src="../js/main.js"></script>
 
-  <script>
-  const sliders = document.querySelectorAll('.js-swiper');
-
-  sliders.forEach((slider) => {
-    const thumbs = slider.querySelector('.js-swiper-thumbs');
-    const main = slider.querySelector('.js-swiper-main');
-
-    const swiperThumbs = new Swiper(thumbs, {
-      loop: true,
-      spaceBetween: 8,
-      slidesPerView: 4,
-      freeMode: true,
-      watchSlidesProgress: true,
-    });
-
-    const swiperMain = new Swiper(main, {
-      loop: true,
-      spaceBetween: 10,
-      effect: 'fade',
-      fadeEffect: {
-        crossFade: true,
-      },
-      speed: 1500,
-      navigation: {
-        nextEl: slider.querySelector('.swiper-button-next'),
-        prevEl: slider.querySelector('.swiper-button-prev'),
-      },
-      thumbs: {
-        swiper: swiperThumbs,
-      },
-    });
-  });
-  </script>
 </body>
 </html>
