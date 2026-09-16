@@ -147,6 +147,16 @@ Header
   } 
 }
 
+@media (min-width: 768px) {
+  .header_logo a {
+    transition: opacity .5s;
+  }
+
+  .header_logo a:hover {
+    opacity: .7;
+  }
+}
+
 .header_logo img {
   width: 136px;
   height: auto;
@@ -336,7 +346,12 @@ SP drawer
     color: #fff;
     font-family: var(--font-family-jp);
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 500;
+    transition: opacity .5s;
+  }
+
+  .nav_drawer_list li a:hover {
+    opacity: .7;
   }
 }
 
@@ -1442,7 +1457,7 @@ news
 
 @media (min-width: 768px) {
   .news_more {
-    margin-top: 72px;
+    margin-top: 96px;
   }
 }
 
@@ -1450,20 +1465,19 @@ news
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 280px;
-  height: 56px;
+  width: 100%;
+  height: 48px;
   margin: 0 auto;
   background-color: var(--color-accent);
   color: #fff;
-  font-size: 1rem;
+  font-size: .85rem;
   font-weight: 600;
   line-height: 1;
   letter-spacing: .15rem;
 }
-
 @media (min-width: 768px) {
   .news_more a {
-    width: 240px;
+    width: 300px;
     height: 48px;
     transition: opacity .5s;
   }
@@ -1589,18 +1603,28 @@ contact
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 280px;
-  height: 56px;
+  width: 100%;
+  height: 48px;
   margin: 0 auto;
   border: 0;
   border-radius: 0;
   background-color: #999;
   color: #fff;
   font-family: var(--font-family-jp);
-  font-size: 1rem;
+  font-size: .9rem;
   font-weight: 600;
-  letter-spacing: .5rem;
+  letter-spacing: 1rem;
   cursor: pointer;
+}
+@media (min-width: 768px) {
+  .form_submit button {
+    width: 280px;
+    transition: opacity .5s;
+  }
+
+  .form_submit button:hover {
+    opacity: .7;
+  }
 }
 
 /*--------------------------------------
@@ -1659,6 +1683,16 @@ footer
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .footer_logo a {
+    transition: opacity .5s;
+  }
+
+  .footer_logo a:hover {
+    opacity: .7;
+  }
+}
+
 .footer_logo img {
   width: 170px;
   height: auto;
@@ -1713,6 +1747,15 @@ footer
   color: #fff;
   font-size: .9rem;
   line-height: 1;
+}
+@media (min-width: 768px) {
+  .footer_nav a {
+    transition: opacity .5s;
+  }
+
+  .footer_nav a:hover {
+    opacity: .8;
+  }
 }
 
 .footer_nav .instagram_icon {
