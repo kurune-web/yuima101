@@ -1287,6 +1287,10 @@ stay
   font-size: .9rem;
 }
 
+.stay_body.terms p {
+  margin-bottom: 16px;
+}
+
 /* faq */
 .faq-item {
   margin-bottom: 30px; 
