@@ -883,8 +883,14 @@ philosophy
 }
 
 .philosophy_body p {
+  margin-bottom: 16px;
+  text-align: justify;
   font-size: 1rem;
   line-height: 1.8;
+}
+
+.philosophy_body p + p {
+  margin-bottom: 0;
 }
 
 /*--------------------------------------
