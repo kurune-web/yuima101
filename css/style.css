@@ -988,15 +988,20 @@ architecture
 }
 
 .architecture_body p {
+  margin-bottom: 16px;
+  text-align: justify;
   font-size: 1rem;
   line-height: 1.8;
 }
 @media (min-width: 768px) {
   .architecture_body p {
-    margin: 0;
     font-size: 1rem;
     line-height: 1.8;
   }
+}
+
+.architecture_body p + p {
+  margin-bottom: 0;
 }
 
 /*--------------------------------------
