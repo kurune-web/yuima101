@@ -1079,13 +1079,21 @@ pillars
 }
 
 .pillars_body p {
+  line-height: 1.6;
+  text-align: justify;
   font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 16px;
 }
 @media (min-width: 768px) {
   .pillars_body p {
     font-size: 1rem;
     line-height: 1.8;
   }
+}
+
+.pillars_body p + p {
+  margin-bottom: 0;
 }
 
 /*--------------------------------------
