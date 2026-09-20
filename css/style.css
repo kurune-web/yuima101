@@ -440,14 +440,14 @@ Hero
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 140px;
+  padding-top: 100px;
   text-align: center;
   pointer-events: none;
   color: #fff;
 }
 @media (min-width: 768px) {
   .hero_content {
-    padding-top: 200px;
+    padding-top: 110px;
   }
 }
 
@@ -461,9 +461,25 @@ Hero
   }
 }
 
+.hero_content h1 br.sp-br {
+  display: block;
+}
+@media (min-width: 768px) {
+  .hero_content h1 br.sp-br {
+    display: none;
+  }
+}
+
 .hero_content p {
   margin: 1rem 0 0;
-  font-size: 1.2rem;
+  font-size: .9rem;
+  line-height: 1.6;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  .hero_content p {
+    font-size: 1rem;
+  }
 }
 
 @keyframes hero-slide {
