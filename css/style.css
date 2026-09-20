@@ -708,7 +708,7 @@ Introduction
   flex-direction: row-reverse;
   align-items: flex-start;
   justify-content: center;
-  gap: 32px;
+  gap: 16px;
   margin-top: 56px;
 }
 @media (min-width: 768px) {
@@ -770,6 +770,10 @@ Introduction
     font-size: 1rem;
     line-height: 1.4;
   }
+}
+
+.introduction_text p span {
+  text-combine-upright: all;
 }
 
 /*--------------------------------------
