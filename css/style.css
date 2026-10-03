@@ -1120,7 +1120,7 @@ place
 
 @media (min-width: 768px) {
   .place .section_header .section_title {
-    text-align: right;
+    text-align: left;
   }
 }
 
