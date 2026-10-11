@@ -1025,11 +1025,6 @@ pillars
   filter: blur(6px);
   opacity: 0.35;
 }
-@media (min-width: 768px) {
-  .pillars::before {
-    background-size: 100% auto;
-  }
-}
 
 .pillars_inner {
   position: relative;
@@ -1169,13 +1164,12 @@ place
 
 .place_image img {
   width: 100%;
-  height: 220px;
-  object-fit: cover;
-  object-position: center;
+  height: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 648px) and (max-width: 767px) {
   .place_image img {
-    height: 300px;
+    height: 220px;
+    object-fit: contain;
   }
 }
 
