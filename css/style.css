@@ -1057,6 +1057,14 @@ pillars
   }
 }
 
+@media (min-width: 648px) and (max-width: 767px) {
+  .pillars_image img {
+    display: block;
+    width: 70%;
+    height: auto;
+    margin: 40px auto;
+  }
+}
 @media (min-width: 768px) {
   .pillars_image img {
     display: block;
