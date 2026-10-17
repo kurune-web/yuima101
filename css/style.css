@@ -830,7 +830,7 @@ philosophy
     display: grid;
     grid-template-columns: 1fr 40%;
     column-gap: 72px;
-    align-items: start;
+    align-items: center;
   }
 }
 
@@ -887,10 +887,6 @@ philosophy
   text-align: justify;
   font-size: 1rem;
   line-height: 1.8;
-}
-
-.philosophy_body p + p {
-  margin-bottom: 0;
 }
 
 /*--------------------------------------
