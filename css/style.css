@@ -2091,3 +2091,11 @@ News article
   width: 20px;
   height: 20px;
 }
+
+/*--------------------------------------
+other
+----------------------------------------*/
+#terms,
+#privacy {
+  scroll-margin-top: 80px;
+}
