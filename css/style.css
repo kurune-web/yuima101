@@ -2096,6 +2096,7 @@ News article
 other
 ----------------------------------------*/
 #terms,
-#privacy {
+#privacy,
+#cancel {
   scroll-margin-top: 80px;
 }
